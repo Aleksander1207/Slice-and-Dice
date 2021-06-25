@@ -1,0 +1,206 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Slice and Dice</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d5dcc36837.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo" />
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    </head>
+    <body onload="carousel()">
+        <header>
+            <img id="header" src="header.jpg" alt="header">
+            <img id="logo" src="logo.png" alt="logo">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Work</a></li>
+                <li><a href="#people">Our Team</a></li>
+                <li><a href="#carousel">Testimonials</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <hr>
+            <div id="nav-icon" onclick="toggleNavigation()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1>Your Favorite One Page <br> Multi Purpose Template</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+               Praesent commodo cursus magna <br id="p-new-line">vel scelerisque nisl consectetur et.
+            </p>
+            <div id="button-container">
+                <button id="button1">Find out more</button>
+            </div>
+        </header>
+            <!-- <div id="features">
+                <div class="feature">
+                    <img src="icon1.png" alt="icon1">
+                    <h3>Easily Customised</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon2.png" alt="icon2">
+                    <h3>Responsive Ready</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon3.png" alt="icon3">
+                    <h3>Modern Design</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon4.png" alt="icon4">
+                    <h3>Clean Code</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon5.png" alt="icon5">
+                    <h3>Ready To Ship</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+                <div class="feature">
+                    <img src="icon6.png" alt="icon6">
+                    <h3>Download for Free</h3>
+                    <p>Et egestas quis ipsum suspendisse ultrices. Pretium viverra suspendisse potenti nullam ac tortor vitae.</p>
+                </div>
+            </div>
+            <div id="gallery">
+                <div class="work">
+                    <img src="work1.jpg" alt="work1">
+                </div>
+                <div class="work" id="work2">
+                    <img src="work2.jpg" alt="work2">
+                </div>
+                <div class="work">
+                    <img src="work3.jpg" alt="work3">
+                    <div class="overlay">
+                        <h4>PROJECT NAME</h4>
+                        <p>User interface Design</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work4.jpg" alt="work4">
+                </div>
+                <div class="work">
+                    <img src="work5.jpg" alt="work5">
+                </div>
+                <div class="work">
+                    <img src="work6.jpg" alt="work6">
+                </div>
+                <div class="work">
+                    <img src="work7.jpg" alt="work7">
+                </div>
+                <div class="work">
+                    <img src="work8.jpg" alt="work8">
+                </div>
+            </div>
+            <div id="people">
+                <div class="person">
+                    <img src="person1.jpg" alt="person1">
+                    <h3>Ruth Woods</h3>
+                    <h4>Founder, CEO</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="person">
+                    <img src="person2.jpg" alt="person2">
+                    <h3>Timothy Reed</h3>
+                    <h4>CO-Founder, Developer</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </p>
+                   <i class="fab fa-facebook-f"></i>
+                   <i class="fab fa-twitter"></i>
+                   <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="person">
+                    <img src="person3.jpg" alt="person3">
+                    <h3>Victoria Valdez</h3>
+                    <h4>UI Designer</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="person">
+                    <img src="person4.jpg" alt="person4">
+                    <h3>Beverly Little</h3>
+                    <h4>Data Scientist</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+            <div id="carousel">
+                    <div class="image-container">
+                        <img src="carousel-2.jpg" alt="carousel-2">
+                    </div> 
+                    <div class="image-container">
+                        <img src="carousel-1.jpg" alt="carousel-1">
+                    </div>
+                    <div class="image-container">
+                        <img src="carousel-3.jpg" alt="carousel-3">
+                    </div>
+                    <div class="image-container">
+                        <img src="carousel-4.jpg" alt="carousel-4">
+                    </div>
+                    <div class="image-container">
+                        <img src="carousel-5.jpg" alt="carousel-5">
+                    </div>
+                <div id="rightside">
+                    <p id="quote">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..."
+                    </p>
+                    <p id="person">Susan Sims, Interaction Designer At XYZ</p>
+                    <div id="dot-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="download">
+                <h2>Are You Ready to Start? Download Now For Free!</h2>
+                <h4>Fusce Dapibus, Tellus AC cursus commodo</h4>
+                <a href="#">Download Here</a>
+            </div>
+            <footer>
+                <div id="contacts">
+                    <div id="location">
+                        <h4>Location</h4>
+                        <p>3481 Melrose Place <br> Beverly Hills, CA 90210</p>
+                    </div>
+                    <div id="share">
+                        <h4>Share with Love</h4>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div id="about">
+                        <h4>About ActiveBox</h4>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                </div>
+                <div id="rights">
+                    <p>Copyright &#169 2015 ActiveBox. All Rights Reserved</p>
+                    <p>Made with <span id="hearts">&hearts;</span> <span id="by">by Kamal Chaneman</span></p>
+                </div>
+            </footer> -->
+    </body>
+</html>
