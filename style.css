@@ -1,25 +1,21 @@
 * {
     box-sizing: border-box;
-}
-body{
     padding: 0;
     margin: 0;
+}
+body{
     font-family: "Raleway";
 }
-header, #features{
+img{
     width: 100%;
 }
-header{
-    margin: auto;
-}
-#header{
-    max-width: 100%;
-    height: auto;
-}
+/* ----------------------------------------------Header Start------------------------------------------------------------ */
 #logo{
     position: absolute;
     top: 30px;
     left:40px;
+    width:30%;
+    height: 3%;
 }
 #nav-icon{
     position: absolute;
@@ -32,11 +28,10 @@ header hr{
 }
 ul{
     position: absolute;
-    width: 100%;
-    top:50px;
+    width: 40%;
+    top:70px;
     list-style-type: none;
     z-index: 2;
-    background-image: url('header.jpg');
     display: none;
 }
 li{
@@ -50,13 +45,14 @@ li{
 ul a{
     color: rgb(167, 171, 183);
     font-weight: bold;
+    text-decoration: none;
 }
 ul a:hover{
     color: white;
 }
 h1{
     position: absolute;
-    top: 70px;
+    top: 90px;
     color: white;
     font-size: 30px;
     text-transform: uppercase;
@@ -67,7 +63,7 @@ h1{
 }
 header p{
     position: absolute;
-    top: 170px;
+    top: 180px;
     color: white;
     font-size: 14px;
     text-align: center;
@@ -81,7 +77,7 @@ header p{
 }
 #button-container{
    position: absolute;
-   top:270px;
+   top:280px;
    left: 50%;
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
@@ -101,9 +97,220 @@ button{
 button:hover{
     background-color: rgb(206, 35, 35);
 }
+/* ----------------------------------------------Header End------------------------------------------------------------ */
 
-/* ---------------------------------------------------------------------------------------------------------- */
-@media only screen and (min-width: 768px) {
+
+/* ----------------------------------------------Features Start------------------------------------------------------------ */
+
+#features{
+    margin-top: 16%;
+    text-align: center;
+    width: 100%;
+}
+.feature{
+    display: inline-block;
+    width: 40%;
+}
+.feature img{
+    width: 30%;
+    height:30%;
+    padding: 5px 5px 2px;
+}
+.feature h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 10px 3px;
+    font-size: 15px;
+}
+.feature p{
+    padding: 15px;
+    color: rgba(167,168,170,255);
+    font-weight: lighter;
+    font-size: 13px;
+}
+/* ----------------------------------------------Features End------------------------------------------------------------ */
+
+
+/* ----------------------------------------------Work Gallery Start------------------------------------------------------------ */
+
+#gallery{
+    max-width: 100%;
+    padding-top: 20%;
+    margin-bottom: 55%;
+}
+.work img{
+    float: left;
+    height:max-content;
+    border: 1px solid white;
+}
+/* ----------------------------------------------Work Gallery End------------------------------------------------------------ */
+
+/* ----------------------------------------------People Start------------------------------------------------------------ */
+
+#people{
+    max-width: 100%;
+    margin: 60px 30px;
+    height: 500px;
+}
+#people .person{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 100%;
+}
+.person h4{
+    text-transform: uppercase;
+    color: red;
+    font-weight: lighter;
+    padding: 8px;
+    text-align: center;
+}
+.person{
+    float: left;
+    max-width:25%;
+}
+.person img{
+    padding: 5px;
+}
+.person h3{
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    padding: 8px;
+}
+.person p{
+    text-align: center;
+    color: rgba(135,139,141,255);
+    font-weight: normal;
+    padding: 10px;
+}
+.fab{
+    margin-right: 2%;
+    border: 1px solid rgba(201,202,204,255);
+    padding: 5%;
+    max-width: 20%;
+    max-height: 20%;
+    color: rgba(201,202,204,255);
+}
+.fa-facebook-f{
+    padding: 5% 6%;
+}
+
+
+/* ----------------------------------------------People End------------------------------------------------------------ */
+
+
+/* ----------------------------------------------Carousel Start------------------------------------------------------------ */
+
+ #carousel{
+    width: 100%;
+    margin-bottom: 10%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70%;
+}
+#rightside{
+    width: 50%;
+    background-color: rgba(82,53,73,255);
+    height: 50%;
+}
+.image-container{
+    height: 50%;
+    width: 50%;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+#rightside p{
+    color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 20%;
+}
+#rightside #quote{
+    font-size: 15px;
+    padding-top: 10%;
+    font-family: "Cardo";
+    font-style: italic;
+}
+#rightside #person{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#dot-container{
+    margin-left: 45%;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: rgba(117,94,110,255);
+    border-radius: 50%;
+    display: inline-block;
+}
+/* ----------------------------------------------Carousel End------------------------------------------------------------ */
+
+/* ----------------------------------------------Footer Start------------------------------------------------------------ */
+
+footer{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer #contacts{
+    max-height: 70%;
+    background-color: rgba(58,62,99,255);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 35px 0;
+}
+footer #rights{
+    max-height: 30%;
+    background-color: rgba(49,52,85,255);
+    text-align: center;
+    color: rgba(92,93,112,255);
+    padding: 35px 0;
+    font-weight: lighter;
+}
+#contacts h4{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+}
+#contacts p{
+    color: rgba(128,132,161,255);
+    font-weight: lighter;
+    font-size: 13px;
+}
+#share .fab{
+    border: 2px solid white;
+    color: white;
+    padding: 15px 26px 28px 12px;
+    margin-top: 10px;
+}
+
+#hearts{
+    color: red;
+}
+#by{
+    color: white;
+}
+#location, #share, #about{
+    max-width:25%;
+    margin-left: 16%;
+    padding: 18px;
+}
+
+/* ----------------------------------------------Footer End------------------------------------------------------------ */
+
+ @media only screen and (min-width: 768px) {
+
+/* ----------------------------------------------Header Start------------------------------------------------------------ */
     h1{
         top:100px;
         font-size: 40px;
@@ -121,9 +328,58 @@ button:hover{
     li{
         font-size: 30px;
     }
+    ul{
+        width: 54%;
+    }
+/* ----------------------------------------------Header End------------------------------------------------------------ */
+ 
+/* ----------------------------------------------Features Start------------------------------------------------------------ */
+    .feature h3{
+        font-size: 18px;
+    }
+    .feature p{
+        font-size: 15px;
+        padding: 20px;
+    }
+    .feature img{
+        width: 30%;
+        height:30%;
+        padding: 5px 5px 8px;
+    }
+/* ----------------------------------------------Features End------------------------------------------------------------ */
+
+
+
+/* ----------------------------------------------People Start------------------------------------------------------------ */
+.person h4{
+    padding: 8px;
 }
-/* ---------------------------------------------------------------------------------------------------------- */
+.person img{
+    padding: 15px;
+}
+.person h3{
+    padding: 5px;
+}
+.person p{
+    padding: 12px;
+}
+/* ----------------------------------------------People End------------------------------------------------------------ */
+
+/* ----------------------------------------------Carousel Start------------------------------------------------------------ */
+
+#carousel{
+    margin-top: 350%;
+}
+/* ----------------------------------------------Carousel End------------------------------------------------------------ */
+
+
+}
+
+
+
 @media only screen and (min-width: 992px) {
+
+/* ----------------------------------------------Header Start------------------------------------------------------------ */
     h1{
         top:160px;
         font-size: 44px;
@@ -138,205 +394,214 @@ button:hover{
     button{
         font-size: 18px;
     }
-    li{
-        font-size: 30px;
-    }
     #nav-icon{
         display: none;
-    }
-    ul{
-        display: block;
-        background-image: none;
-        top:20px;
-        left:7%;
-    }
-    li{
-        background-image: none;
-        float: left;
-        font-size: 15px;
-        padding: 10px;
-    }
-    ul a{
-        text-decoration: none;
     }
     header hr{
         display: inline-block;
         position: absolute;
-        top:100px;
+        top:120px;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 85%;
+        height: 1px;
+        border: 0.1px solid rgb(167, 171, 183);
     }
     #logo{
-        top: 50px;
-        left:100px;
+        top: 70px;
+        left:70px;
+        height: 3%;
+        width: 20%;
     }
+    nav ul{
+        background-image: none;
+        display: flex;
+    }
+    nav ul li{
+        background-image: none;
+        font-size: 15px;
+        padding: 5px 15px;
+        transform: translateX(400px);
+    }
+/* ----------------------------------------------Header End------------------------------------------------------------ */
+
+/* ----------------------------------------------Features Start------------------------------------------------------------ */
+.feature h3{
+    font-size: 20px;
 }
-/* ---------------------------------------------------------------------------------------------------------- */
+.feature p{
+    font-size: 18px;
+    padding: 25px;
+}
+.feature img{
+    width: 25%;
+    height:25%;
+}
+/* ----------------------------------------------Features End------------------------------------------------------------ */
+
+/* ----------------------------------------------Work Gallery Start------------------------------------------------------------ */
+.work{
+    width: 50%;
+    float: left;
+    height: 300px;
+}
+.work img{
+    height: 100%;
+}
+/* ----------------------------------------------Work Gallery End------------------------------------------------------------ */
+
+/* ----------------------------------------------People Start------------------------------------------------------------ */
+.person h4{
+    padding: 8px;
+    text-align: left;
+}
+.person img{
+    padding: 20px;
+}
+.person h3{
+    padding: 5px;
+    font-size: 25px;
+    text-align: left;
+}
+.person p{
+    padding: 12px;
+    text-align: left;
+}
+/* ----------------------------------------------People End------------------------------------------------------------ */
+
+/* ----------------------------------------------Carousel Start------------------------------------------------------------ */
+
+#carousel{
+    margin-top: 100%;
+    height: 650px;
+}
+#rightside #quote{
+    font-size: 20px;
+}
+/* ----------------------------------------------Carousel End------------------------------------------------------------ */
+
+
+}
+
+
+
 @media only screen and (min-width: 1200px) {
+
+/* ----------------------------------------------Header Start------------------------------------------------------------ */
+
     #button-container{
-        top:75%;
+        top:520px;
     }
     header p{
-        top: 55%;
+        top: 400px;
         font-size: 20px;
     }
     h1{
-        top:30%;
+        top:210px;
         font-size: 60px;
     }
     #p-new-line{
         display: block;
     }
-    ul{
-        top:20px;
-        left:15%;
-    }
-    li{
+    nav ul li{
         font-size: 15px;
+        padding: 5px 20px;
+        transform: translateX(800px);
     }
     header hr{
-        top:100px;
+        top:130px;
         width: 80%;
     }
     #logo{
         left:10%;
+        height: 4%;
     }
-}
+/* ----------------------------------------------Header End------------------------------------------------------------ */
 
 
-#features{
-    margin-top: 16%;
-    text-align: center;
-    width: 100%;
-}
-#features p{
-    color: rgba(167,168,170,255);
-    font-weight: lighter;
-}
+/* ----------------------------------------------Features Start------------------------------------------------------------ */
+
 .feature{
-    float:left;
-    width:20%;
-    margin-left: 3%;
-    margin-right: 4%;
-    margin-bottom: 3%;
-    padding-left: 5%;
+    max-width: 33.33%;
+    float: left;
 }
 .feature h3{
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 23px;
 }
-#gallery{
-    max-width: 100%;
-    padding-top: 35%;
-    margin-bottom: 55%;
+.feature p{
+    font-size: 20px;
+    padding: 20px 30px;
+}
+.feature img{
+    max-width: 60%;
+    max-height:60%;
+}
+/* ----------------------------------------------Features End------------------------------------------------------------ */
+
+/* ----------------------------------------------Work Gallery Start------------------------------------------------------------ */
+.work{
+    max-width: 25%;
 }
 .work img{
-    float: left;
-    max-width:24.85%;
-    height:max-content;
-    border: 1px solid white;
+    width:100%;
+    height: 100%;
 }
-.overlay{
-    position: absolute;
-    width: 24.85%;
-    background-color: rgba(221, 67, 67, 0.8);
-    color: white;
-    text-align: center;
-    height: 46.5%;
-    left: 50%;
-}
-.overlay h4,.overlay p{
-    position: relative;
-    top:40%;
-}
+
+/* ----------------------------------------------Work Gallery End------------------------------------------------------------ */
+
+
+/* ----------------------------------------------People Start------------------------------------------------------------ */
 #people{
-    max-width: 100%;
-    margin: 0 2% 102% 2%;
+    margin: 10px 200px;
 }
 .person h4{
-    text-transform: uppercase;
-    color: red;
-    font-weight: lighter;
+    padding: 8px 12px;
 }
-.person{
-    float: left;
-    max-width:20%;
-    margin-left: 4%;
+.person img{
+    padding: 15px;
 }
 .person h3{
-    color: black;
-    font-weight: normal;
+    padding: 5px 10px;
+    font-size: 25px;
 }
 .person p{
+    padding: 12px;
     text-align: justify;
-    color: rgba(135,139,141,255);
-    font-weight: normal;
 }
 .fab{
-    margin-right: 2%;
-    border: 1px solid rgba(201,202,204,255);
-    padding: 5%;
-    max-width: 20%;
-    max-height: 20%;
-    color: rgba(201,202,204,255);
+    margin-left: 7px;
+}
+/* ----------------------------------------------People End------------------------------------------------------------ */
 
-}
-.fa-facebook-f{
-    padding: 5% 6%;
-}
+/* ----------------------------------------------Carousel Start------------------------------------------------------------ */
+
 #carousel{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row; 
-    margin-bottom: 10%;
-    height: 500px;
-}
-.image-container{
-    width: 50%;
-    height: 100%;
-    display: none;
-}
-.image-container img{
-    width: 100%;
-    height: 100%;
-}
-#rightside{
-    width: 50%;
-    background-color: rgba(82,53,73,255);
-}
-#rightside p{
-    color: white;
-    padding-left: 10%;
-    padding-top: 5%;
-    padding-right: 20%;
+    margin-top: 50%;
+    height: 1000px;
 }
 #rightside #quote{
-    font-size: 150%;
-    padding-top: 10%;
-    font-family: "Cardo";
-    font-style: italic;
-}
-#rightside #person{
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 27px;
 }
 #dot-container{
-    margin-top: 30px;
-    margin-left: 45%;
+    margin-left: 42%;
+    margin-top: 25px;
 }
 .dot{
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: rgba(117,94,110,255);
-    border-radius: 50%;
-    display: inline-block;
+    height: 15px;
+    width: 15px;
 }
+/* ----------------------------------------------Carousel End------------------------------------------------------------ */
+
+
+}
+
+/* ----------------------------------------------Download Start------------------------------------------------------------ */
+
 #download{
     max-width: 100%;
     margin-bottom: 10%;
+    margin-top: -30%;
     text-align: center;
 }
 #download h2{
@@ -364,52 +629,6 @@ button:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
-footer{
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-footer #contacts{
-    max-height: 70%;
-    background-color: rgba(58,62,99,255);
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding: 4% 10%;
-}
-footer #rights{
-    max-height: 30%;
-    background-color: rgba(49,52,85,255);
-    text-align: center;
-    color: rgba(92,93,112,255);
-    padding: 1% 0;
-    font-weight: lighter;
-}
-#contacts h4{
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-#contacts p{
-    color: rgba(128,132,161,255);
-    font-weight: lighter;
-}
-#share .fab{
-    border: 2px solid white;
-    color: white;
-
-}
-#hearts{
-    color: red;
-}
-#by{
-    color: white;
-}
-#location, #share, #about{
-    max-width:25%;
-    margin-left: 16%;
-}
-
-
+/* ----------------------------------------------Download End------------------------------------------------------------ */
 
 

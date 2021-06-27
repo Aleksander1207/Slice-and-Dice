@@ -12,28 +12,34 @@
     </head>
     <body onload="carousel()">
         <header>
-            <img id="header" src="header.jpg" alt="header">
-            <img id="logo" src="logo.png" alt="logo">
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Work</a></li>
-                <li><a href="#people">Our Team</a></li>
-                <li><a href="#carousel">Testimonials</a></li>
-                <li><a href="#download">Download</a></li>
-            </ul>
-            <hr>
-            <div id="nav-icon" onclick="toggleNavigation()">
-                <i class="fas fa-bars"></i>
+            <div id="nav-bar">
+                <img src="header.jpg" alt="header" id="header-img">
+                <div class="container flex">
+                    <img id="logo" src="logo.png" alt="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#gallery">Work</a></li>
+                            <li><a href="#people">Our Team</a></li>
+                            <li><a href="#carousel">Testimonials</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                        <div id="nav-icon" onclick="toggleNavigation()">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>  
+                <hr>
             </div>
-            <h1>Your Favorite One Page <br> Multi Purpose Template</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <h1 id="title">Your Favorite One Page <br> Multi Purpose Template</h1>
+            <p id="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                Praesent commodo cursus magna <br id="p-new-line">vel scelerisque nisl consectetur et.
             </p>
             <div id="button-container">
                 <button id="button1">Find out more</button>
             </div>
         </header>
-            <div id="features">
+             <div id="features">
                 <div class="feature">
                     <img src="icon1.png" alt="icon1">
                     <h3>Easily Customised</h3>
@@ -74,10 +80,6 @@
                 </div>
                 <div class="work">
                     <img src="work3.jpg" alt="work3">
-                    <div class="overlay">
-                        <h4>PROJECT NAME</h4>
-                        <p>User interface Design</p>
-                    </div>
                 </div>
                 <div class="work">
                     <img src="work4.jpg" alt="work4">
@@ -174,7 +176,7 @@
                         <span class="dot"></span>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div id="download">
                 <h2>Are You Ready to Start? Download Now For Free!</h2>
                 <h4>Fusce Dapibus, Tellus AC cursus commodo</h4>
